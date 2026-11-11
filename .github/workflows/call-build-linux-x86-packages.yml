@@ -42,7 +42,7 @@ jobs:
       matrix: ${{ fromJSON(inputs.build_matrix) }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: ${{ inputs.version }}
 

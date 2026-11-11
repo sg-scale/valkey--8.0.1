@@ -51,7 +51,7 @@ jobs:
       arm64-build-matrix: ${{ steps.set-matrix.outputs.arm64-build-matrix }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       # Set up the list of target to build so we can pass the JSON to the reusable job
       - uses: ./.github/actions/generate-package-build-matrix
         id: set-matrix
